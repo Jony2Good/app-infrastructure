@@ -66,7 +66,7 @@ services:
       - app_network
 
   blue:
-    image: ghcr.io/Jony2Good/email-validator:latest
+    image: ghcr.io/jony2good/email-validator:latest
     container_name: blue
     restart: unless-stopped
     env_file: .env
@@ -82,7 +82,7 @@ services:
       - app_network
 
   blue_consumer:
-    image: ghcr.io/Jony2Good/email-validator:latest
+    image: ghcr.io/jony2good/email-validator:latest
     container_name: blue_consumer
     restart: on-failure
     env_file: .env
@@ -109,7 +109,7 @@ services:
       - app_network
 
   green:
-    image: ghcr.io/Jony2Good/email-validator:latest
+    image: ghcr.io/jony2good/email-validator:latest
     container_name: green
     restart: unless-stopped
     env_file: .env
@@ -125,7 +125,7 @@ services:
       - app_network
 
   green_consumer:
-    image: ghcr.io/Jony2Good/email-validator:latest
+    image: ghcr.io/jony2good/email-validator:latest
     container_name: green_consumer
     restart: on-failure
     env_file: .env
